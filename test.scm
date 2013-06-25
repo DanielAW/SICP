@@ -1,0 +1,6 @@
+(define ret (+ 3 2 5))
+(display ret)
+(newline)
+(define (square z) (* z z))
+(display (square 4))
+(newline)
