@@ -1,0 +1,9 @@
+(test 0 (p)) wird aufgeloest
+
+In der 'Normal Order' wird test aufgeloest zu:
+(if(= 0 0) 0 (p))
+dann wertet er aus dass 0 = 0: true ist und gibt 0 zurueck, (p) muss nicht angefasst werden => kein Endlosloop
+
+In der 'Applicative Order' wird erst versucht (p) versucht aufzuloesen, und da
+(define (p) (p)) ist
+versucht er immer wieder (p) aufzuloesen => Endlosloop

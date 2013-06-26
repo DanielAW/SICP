@@ -1,0 +1,2 @@
+Endet wieder in einer Endlosschleife, da im selbst definierten if
+beide Klausen ausgewertet werden
